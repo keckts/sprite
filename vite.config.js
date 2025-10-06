@@ -4,6 +4,9 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // --- FIX: Add the base path for GitHub Pages ---
+  base: '/sprite/', 
+  
   plugins: [react()],
   server: {
     allowedHosts: true
@@ -21,4 +24,4 @@ export default defineConfig({
       },
     },
   },
-}) 
+})
